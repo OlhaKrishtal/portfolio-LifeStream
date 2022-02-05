@@ -72,8 +72,13 @@ body{
     line-height: 31px;
     text-transform: uppercase;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 .btn--long svg{
     width: 70px;
@@ -229,6 +234,7 @@ body{
     padding: 52px 50px 52px 105px;
     background-color: #C31F5C;
     border-radius: 10px;
+    display: inline-block;
 }
 .intro__form-title{
     font-size: 16px;
@@ -313,7 +319,7 @@ body{
 /***** .about *****/
 
 .about{
-    padding: 160px 0 0;
+    padding: 80px 0 0;
 }
 .about__inner{
     display: -webkit-box;
@@ -382,7 +388,7 @@ body{
 /***** .example *****/
 
 .example{
-    padding: 160px 0 160px;
+    padding: 80px 0 80px;
 }
 .example__title{
     max-width: 410px;
@@ -483,9 +489,15 @@ body{
     border-radius: 10px;
     margin-left: 10px;
     -webkit-transform: translateX(-70%);
-        -ms-transform: translateX(-70%);
-            transform: translateX(-70%);
+    -ms-transform: translateX(-70%);
+    transform: translateX(-70%);
     position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-transform: translateX(-70%);
+    -o-transform: translateX(-70%);
 }
 .quote__box-info::before{
     content: "";
@@ -506,7 +518,7 @@ body{
 
 
 .benefits{
-    padding: 160px 0 100px;
+    padding: 80px 0 60px;
 }
 .benefits__inner{
     display: grid;
@@ -520,6 +532,10 @@ body{
     background-color: #33566F;
     border-radius: 10px;
     color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .benefits__item-title{
     font-family: "PTSans-Bold";
@@ -533,9 +549,13 @@ body{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .benefits__item-title::before{
     content: "";
@@ -623,7 +643,7 @@ body{
 /***** .info *****/
 
 .info{
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: #f2f2f2;
 }
 .info__inner{
@@ -654,7 +674,7 @@ body{
 /***** .gift *****/
 
 .gift{
-    padding: 160px 20px;
+    padding: 80px 20px;
 }
 .gift__title{
     max-width: 410px;
@@ -739,7 +759,7 @@ body{
 /***** .program *****/
 
 .program{
-    padding: 180px 0 20px;
+    padding: 80px 0 20px;
 }
 .program__title{
     max-width: 400px;
@@ -806,7 +826,7 @@ body{
 /***** .price *****/
 
 .price{
-    padding: 140px 0 160px;
+    padding: 60px 0 80px;
 }
 
 .price__inner{
@@ -825,11 +845,15 @@ body{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .price-box:first-child{
     margin-right: 30px;
@@ -875,6 +899,10 @@ body{
     color: #fff;
     max-width: 187px;
     margin: 0 auto 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .price-box__benefits-item{
     color: #000;
@@ -888,6 +916,10 @@ body{
     background-color: #000;
     border-radius: 50%;
     margin: 0 5px 5px 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .price-box__benefits{
     margin-bottom: 50px;
@@ -1096,6 +1128,16 @@ body{
     .intro__form-input{
         width: auto;
     }
+    .intro__img{
+        display: none;
+    }
+    .intro__form{
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .intro__form-title{
+        margin-top: 30px;
+    }
     .about{
         padding-top: 60px;
     }
@@ -1213,6 +1255,12 @@ body{
 }
 
 @media (max-width: 570px){
+    .intro__inner{
+        padding-top: 40px;
+    }
+    .intro__box-item{
+        margin-bottom: 30px;
+    }
     .intro__form-box{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -1226,7 +1274,8 @@ body{
         margin-left: auto;
     }
     .intro__form-title{
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 12px;
         -webkit-transform: skew(-30deg)translate(-60px, -74px);
             -ms-transform: skew(-30deg)translate(-60px, -74px);
@@ -1283,7 +1332,6 @@ body{
     }      
     .benefits__item{
         margin: 0 10px;
-        padding: 10px 10px 15px ;
     }
     .benefits__item-title{
         font-size: 20px;
@@ -1393,9 +1441,7 @@ body{
     .price-box__btn svg{
         margin-top: 20px;
     }
-    .btn--long svg{
-        margin-left: 0;
-    }
+
     .footer{
         padding: 15px 0;
     }
@@ -1405,11 +1451,11 @@ body{
     .intro__box-info{
         padding: 6px;
     }
+    .intro__form{
+        padding: 50px 15px 15px;
+    }
     .intro__form-title{
-        -webkit-transform: skew(-30deg)translate(-61px, -55px);
-            -ms-transform: skew(-30deg)translate(-61px, -55px);
-                transform: skew(-30deg)translate(-61px, -55px);
-        padding: 6px 30px;
+        display: none;
     }
     .example__list-item:first-child::before {
         left: 190px;
@@ -1419,5 +1465,3 @@ body{
         margin-bottom: 15px;
     }
 }
-
-

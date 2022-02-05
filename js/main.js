@@ -9,4 +9,6 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 3000,
       });
+     
+      
 });
